@@ -1,35 +1,14 @@
 # AI 学习笔记
 ## 一. 基础环境篇
-<<<<<<< HEAD
-<<<<<<< HEAD
-[x] 1. [TensorFlow Docker环境安装](/base/system.md)
-[ ] 2. Anaconda环境安装
-[ ] 3. Jupyter-notebook环境学习
-## 二. Python编程基础学习
-![python知识图谱](/image/python_image.jpg)
-[ ] 1. 编程基础
-[ ] 2. Web开发
-[ ] 3. 自动化运维
-=======
-1. [x] TensorFlow Docker环境安装
-2. [] Anaconda环境安装
-3. [] Jupyter-notebook环境学习
+1. [x]  [TensorFlow Docker环境安装](/base/system.md)
+2. [  ]  Anaconda环境安装
+3. [  ]  Jupyter-notebook环境学习
+
 ## 二. Python编程基础学习
 ![python知识图谱](image/python_image.jpg)
-1. [] 编程基础
-2. [] Web开发
-3. [] 自动化运维
->>>>>>> parent of e1f51d4... Update README.md
-=======
-1. [x] [TensorFlow Docker环境安装](/base/system.md)
-2. [ ] Anaconda环境安装
-3. [ ] Jupyter-notebook环境学习
-## 二. Python编程基础学习
-![python知识图谱](/image/python_image.jpg)
 1. [ ] 编程基础
 2. [ ] Web开发
 3. [ ] 自动化运维
->>>>>>> parent of 52a6910... Update README.md
 ## 三. 基础数据处理包Numpy
 ## 四. 数据分析工具PANDAS
 ## 五. 数据可视化工具Matplotlib
