@@ -1,6 +1,6 @@
 # AI 学习笔记
 ## 一. 基础环境篇
-- [x] 1. [服务器系统安装](base/system.md)
+- [x] 1. [服务器系统安装](base/README.md)
 - [ ] 2.  [Anaconda环境安装]()
 - [ ] 3.  [Jupyter-notebook环境学习]()
 
