@@ -6,7 +6,7 @@
 
 ## 二. Python编程基础学习
 ![python知识图谱](image/python_image.jpg)
-- [x] 1. [编程基础](program/index.md)
+- [x] 1. [编程基础](program/readme.md)
 - [ ] 2. [Web开发]()
 - [ ] 3.  [自动化运维]()
 
