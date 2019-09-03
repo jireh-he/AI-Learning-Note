@@ -1,12 +1,12 @@
 # AI 学习笔记
 ## 一. 基础环境篇
-- [x] 1. [TensorFlow Docker环境安装](/base/system.md)
+- [x] 1. [服务器系统安装](base/system.md)
 - [ ] 2.  [Anaconda环境安装]()
 - [ ] 3.  [Jupyter-notebook环境学习]()
 
 ## 二. Python编程基础学习
 ![python知识图谱](image/python_image.jpg)
-- [ ] 1. [编程基础]()
+- [ ] 1. [编程基础](program/index.md)
 - [ ] 2. [Web开发]()
 - [ ] 3.  [自动化运维]()
 
