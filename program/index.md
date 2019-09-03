@@ -1,6 +1,6 @@
 # 编程基础
 
-<p align='right'><a href='../readme.md'>返回--首页</a></p>
+<p align='right'><a href='../'>返回--首页</a></p>
 
 ## 一. Python 语言编程基础
 
