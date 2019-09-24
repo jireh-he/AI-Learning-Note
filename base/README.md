@@ -126,11 +126,11 @@ systemctl restart docker
 
 按照要求创建用户
 
-![创建用户](image/portainer_init.jpeg)
+![创建用户](images/portainer_init.jpeg)
 
 进入控制台dashboard:
 
-![dashboard](image/portainer_dash.png)
+![dashboard](images/portainer_dash.png)
 
 
 
