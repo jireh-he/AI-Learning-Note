@@ -2,7 +2,8 @@
 ## 一. 基础环境篇
 - [x] 1. [服务器系统安装](base/README.md)
 - [x] 2.  [Anaconda环境安装](base/anaconda.md)
-- [ ] 3.  [Jupyter-notebook环境学习]()
+- [x] 3.  [Docker学习](base/docker.md)
+- [ ] 4.  [Jupyter-notebook环境学习]()
 
 ## 二. Python编程基础学习
 ![python知识图谱](image/python_image.jpg)
