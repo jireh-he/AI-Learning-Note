@@ -86,3 +86,31 @@ There are no active volume tasks
 ![更换光盘](images/ovrit-cdrom.png)
 
 这个可以更换到原来的windows安装光盘，通过控制台上的文件——>更换设备，**根本找不到**原来的windows安装dvd，我卡在这一块一个月，晕死！！
+
+## 4. ovirt配置vlan网络
+
+ovirt节点主机是多网卡的服务器，其中一个网卡所接网线是Trunk模式。首先进入oVirt管理台，新建网络：
+
+* 点击左边目录选择网络——》网络，点击新建，新建逻辑网络
+
+![新建逻辑网络](images/addnet.png)
+
+* 输入名称，勾选启用vlan标签，填写vlan标签值,选择确定保存
+
+![填写vlan](images/addvlan.png)
+
+按照这个方法创建多个vlan
+
+![vlan列表](images/vlanlist.png)
+
+* 在主机网络上将逻辑网络添加给对应绑定网卡。点击左边目录计算——>主机，点击主机名称，选择网络接口
+
+  ![主机网络接口](images/hostnet.png)
+
+* 设置主机网络，将相关逻辑网络添加到Trunk模式的网卡接口,点击确定保存。
+
+  ![添加vlan到网络接口](images/interface_vlan.png)
+  
+  
+  
+  
