@@ -45,5 +45,29 @@ p.selfintro()
 
 ## 二. 跟Python随便聊两句
 
+###  1. 关于Python3语法的一些注意
+
+* 默认UTF-8，可以修改文件头部注释指定不同编码
+
+```python
+# -*- coding: cp-1252 -*-
+```
+
+* 数据类型
+
+  * 整数&长整数： a=1234567890
+
+  * 浮点数: a=3.1415926 、b=3E-2
+  * 复数: a=1+2j
+
+  * 字符串
+    * python中单引号和双引号使用完全相同。
+    * 使用三引号('''或""")可以指定一个多行字符串。
+    * 转义符 '\'
+    * 自然字符串， 通过在字符串前加r或R。 如 r"this is a line with \n" 则\n会显示，并不是换行。
+    * python允许处理unicode字符串，加前缀u或U， 如 u"this is an unicode string"。
+    * 字符串是不可变的。
+    * 按字面意义级联字符串，如"this " "is " "string"会被自动转换为this is string。
+
 
 
