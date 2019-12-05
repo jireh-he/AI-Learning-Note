@@ -56,4 +56,37 @@ sudo systemctl start docker
    docker run -p 12306:3306 --name mymysql -v /home/DockerData/mysql/:/etc/mysql/ -v /home/DockerData/mysql/logs:/logs -v /home/DockerData/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -d mariadb
    ```
 
-   
+## 四. Docker常用管理命令
+
+1. 查看状态
+
+   ```bash
+   docker images ls
+   docker container ls -a
+   docker ps
+   docker container stats [container name|id]
+   ```
+
+2. 控制台进入container
+
+   ```bash
+   docker exec -it <container name|id> /bin/bash
+   ```
+
+3. docker启动和映射
+
+   前面的是物理机的端口，后面是docker 容器里面的端口，目录映射同理
+
+   * 比如创建启动gitlab容器的命令如下
+
+     ```bash
+     docker run -d --net=gitlab_net -p 8443:443 -p 8880:80 -p 8022:22 --name gitlab -v /home/work/gitlab/config:/etc/gitlab -v /home/work/gitlab/logs:/var/log/gitlab -v /home/work/gitlab/data:/var/opt/gitlab -e 'GITLAB_SSH_PORT=8022' -e 'DB_HOST=127.0.0.1'  -e 'GITLAB_BACKUPS=weekly' -e 'GITLAB_HOST=111.231.228.178' -e 'GITLAB_SIGNUP=true' -e 'GITLAB_GRAVATAR_ENABLED=false' -e 'HOSTNAME=xxx' gitlab/gitlab-ce
+     ```
+
+   * 创建启动oracle11g的命令如下：
+
+     ```bash
+     docker run -d --name orcl -p 1521:1521 -e ORACLE_SID=orcl -e ORACLE_PWD=oracle -e ORACLE_CHARACTERSET=ZHS16GBK -e SGA_SIZE=4G -e PGA_SIZE=4G -e DB_ROLE=primary -e ENABLE_ARCH=true -v /home/db/oracle:/opt/oracle/oradata docker-oracle11g
+     ```
+
+     
