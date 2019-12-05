@@ -1,5 +1,7 @@
 # Ovirt 学习笔记
 
+[返回-首页](../README.md)
+
 ## 1. Ovirt-node修改IP地址后重启，IP又改变
 
 原因:vdsm服务在重启时更新网桥配置文件ifcfg-ovirtmgmt,需修改vdsm配置文件
