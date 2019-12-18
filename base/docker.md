@@ -89,4 +89,18 @@ sudo systemctl start docker
      docker run -d --name orcl -p 1521:1521 -e ORACLE_SID=orcl -e ORACLE_PWD=oracle -e ORACLE_CHARACTERSET=ZHS16GBK -e SGA_SIZE=4G -e PGA_SIZE=4G -e DB_ROLE=primary -e ENABLE_ARCH=true -v /home/db/oracle:/opt/oracle/oradata docker-oracle11g
      ```
 
-     
+   * 创建启动jupyter/datascience-notebook的命令:
+   
+   	```bash
+   	docker run -d --name notebook -p 8888:8888 -v /home/DockerData/notebook:/home/jovyan jupyter/datascience-notebook
+   	```
+   	
+   	执行以下命令查看日志：
+   	
+   	```bash
+   	docker container logs notebook
+   	```
+   	
+   	
+   	
+   	
