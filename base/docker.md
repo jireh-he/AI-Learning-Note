@@ -100,7 +100,22 @@ sudo systemctl start docker
    	```bash
    	docker container logs notebook
    	```
-   	
-   	
-   	
-   	
+   
+   * 创建启动jupyter/all-spark-notebook全量容器的命令：
+   
+   ```bash
+   docker run -d -v /home/DockerData/lab:/home/jovyan -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes --name mylab jupyter/all-spark-notebook
+   ```
+
+4. docker容器的用户不是管理员，如何以管理员登录？
+
+   以jupyter lab为例，执行命令:
+
+   ```bash
+   docker exec -it -u 0 mylab /bin/bash
+   ```
+
+   以root（uid=0）用户登录管理container
+
+   
+
