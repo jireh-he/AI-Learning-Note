@@ -10,7 +10,7 @@
 
 还可以当计算器用
 
-![1571579739829](images/1571579739829.png)	
+![1571579739829](images/1571579739829.png)
 
 ### 2. 也很严谨
 
@@ -21,6 +21,8 @@
 ```
 
 python源文件需要严格的空格对齐，通过对 齐来区分不同的模块，也让程序更具有可读性，如下：
+
+
 
 ```python
 # -*- coding:utf-8 -*-
@@ -37,11 +39,15 @@ class person:
         self.age=a
         self.__weight=w
     def selfintro(self):
-        print('My name is %s.I am %d years old'%(slef.name,self.age))
+        print('My name is %s.I am %d years old'%(self.name,self.age))
 #实例化类，就是把抽象的人具体成有名字、年龄、体重等具体信息的人
 p=person('John',10,80)
 p.selfintro()
 ```
+
+    My name is John.I am 10 years old
+
+
 
 ## 二. 跟Python随便聊两句
 
@@ -70,4 +76,6 @@ p.selfintro()
     * 按字面意义级联字符串，如"this " "is " "string"会被自动转换为this is string。
 
 
+```python
 
+```

@@ -6,7 +6,7 @@
 
 ### 1. [Python核心知识体系——17张思维导图](17MindMap.md)
 
-### 2. [Python学习笔记](python-learning-node.md)
+### 2. [Python学习笔记](python-learning-node.ipynb)
 
 
 
